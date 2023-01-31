@@ -1,0 +1,73 @@
+string = input("Enter string: ")
+while True:
+    print()
+    print("1. Display the No of Alphabets:")    
+    print("2. Display the No of Digits")
+    print("3. Display the No of Lower Case Characters")
+    print("4. Display the NO of Upper Case Characters")
+    print("5. Display the No of Special Characters")
+    print("6. Display the no of Total Words")
+    print("7. Display the first letter of each word into capital by removing spaces")
+    print("8. Re-input string")
+    print("0. Exit")
+    print()
+    choice = int(input("Enter your choice: "))
+
+    if choice == 1:
+        count = 0
+        for char in string:
+            if char.isalpha():
+                count += 1
+        print("Total number of alphabets: ", count)
+
+    elif choice == 2:
+        count = 0
+        for char in string:
+            if char.isnumeric():
+                count += 1
+        print("Total number of digits: ", count)
+
+    elif choice == 3:
+        count = 0
+        for char in string:
+            if char.islower():
+                count += 1
+        print("Total number of lower case: ", count)
+
+
+    elif choice == 4:
+        count = 0
+        for char in string:
+            if char.isupper():
+                count += 1
+        print("Total number of upper case: ", count)
+
+
+    elif choice == 5:
+        count = 0
+        for char in string:
+            if not (char.isalnum() or char.isspace()):
+                count += 1
+        print("Total number of special characters: ", count)
+ 
+
+    elif choice == 6:
+        l = string.split()
+        print("Total number of words in the string are: ",len(l))
+    
+    elif choice == 7:
+            y=string.upper().split()
+            for i in range(len(y)):
+                if not y[i][0].isalpha():
+                    continue
+                print("First letter of each word into capital  ",y[i][0])
+
+            
+
+    elif choice == 8:
+        string = input("Enter new string: ")
+
+    elif choice == 0:
+        print("Goodbye!")
+        break
+

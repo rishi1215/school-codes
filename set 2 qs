@@ -1,3 +1,6 @@
+# SET 1
+
+# Question 1
 
 d = {}
 n = int(input("Enter total number of elements: "))
@@ -7,6 +10,9 @@ for i in range(n):
 values = sorted(d.values())
 print(values)
 print("First highest: {}\nSecond highest: {}".format(values[-1], values[-2]))
+
+
+
 
 
 # Question 2

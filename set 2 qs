@@ -1,0 +1,21 @@
+
+d = {}
+n = int(input("Enter total number of elements: "))
+for i in range(n):
+    key, value = input("Enter key,value: ").split(",")
+    d[key] = value
+values = sorted(d.values())
+print(values)
+print("First highest: {}\nSecond highest: {}".format(values[-1], values[-2]))
+
+
+# Question 2
+
+t=()
+v=int(input("enter the numbers of elements:"))
+for i in range(v):
+    a = int(input("Enter the value: "))
+    t += (a,)
+print(t)
+for i in t:
+    print("Square of", i ,"is: ", i**2)

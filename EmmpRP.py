@@ -1,14 +1,14 @@
 import pickle
-with open("stud.dat", "wb") as f:
+with open("emp.dat", "wb") as f:
     ans = "y"
     while ans.lower() == "y":
-        eid = int(input("Enter Student ID: "))
-        name = input("Enter Name of Student : ")
+        eid = int(input("Enter Employee ID: "))
+        name = input("Enter Name of Employee : ")
         city = int(input("Enter the City :"))
         dic = {"ID": eid, "Name": name, "City": city}
         pickle.dump(dic, f)
         ans = input("Add more?y/n ")
-with open("stud.dat", "rb") as f:
+with open("emp.dat", "rb") as f:
     try:
         while True:
             r = pickle.load(f)

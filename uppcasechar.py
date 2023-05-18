@@ -17,4 +17,4 @@ with open("dvd.dat", "rb") as f:
             if r["Price"] > 25:
                print(r)
     except:
-        pass
+        print("NO DvD WITH PRICE ABOVE 25")

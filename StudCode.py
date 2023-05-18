@@ -16,4 +16,4 @@ with open("stud.dat", "rb") as f:
             if r["Percentage"] > 50:
                 print(r)
     except:
-        pass
+        print("NO STUDENT SCORED ABOVE 50%)")
